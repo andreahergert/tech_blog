@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #ccc;
+    min-height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-size: 16px;
+  }
+  
+  header, .project:not(:last-child) {
+    background-color: rgb(30, 99, 42);
+    border-bottom: 1px solid black ;
+  }
+  
+  .wrapper{
+    max-width: 1200px;
+  }
+  
+  .no-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    font-size: 100%;
+  }
+  
+  .no-button:hover {
+    color: black;
+    text-decoration: underline;
+  }  
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+
+  
+  .title:visited{    
+    color: black;
+    text-decoration: none; 
+    
+  }
+  
+  .title:hover{
+    color: black;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    font-size: 1.5em;    
+    
+  }
+  
+  .navbar a{
+    text-decoration: none;
+    color: black;
+    margin: 0 5px
+  }     
+  
+  .navbar a:hover{
+    text-decoration: none;
+    color: blue;
+  } 
+  
+  .post{
+    margin: 20px 0;
+    border: 1px rgb(30, 99, 42) solid;
+    text-align: right;
+  }
+  
+  .post-title{
+    background-color: rgb(30, 99, 42);
+    color: black;
+    padding: 15px;
+    margin-top: 0;
+    text-align: left;
+  }
+  
+  .post-title a:link{
+    color: black;
+  }
+  
+ 
+  .post-title a:hover{
+    text-decoration: none;
+    color: blue;
+  }
+  
+  .post-content{
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .post-button{
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .post-author{
+    color: blue;
+    text-align: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+  
+  .post-username{
+    font-weight: bold;
+  }  
+
+  .comments{
+    margin-top: 20px;
+    padding: 10px;
+    border: 3px rgb(30, 99, 42) solid;
+    border-radius: 10px;
+  }
+  
+  .comment-button{
+    margin-top: 20px;
+  }
+
+  .comment-list {
+    text-align: center;
+  }
+  
+  .comment-text{
+    padding: 10px;
+  }
+  
+  .comment-author{
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+ 
+  .card-body{
+    color: black;
+    padding: 15px;
+    margin-top: 0;
+    text-align: left;
+  }
+    
+  .form-row{
+    margin-bottom: 20px;
+  }
+  
+  .signup{
+    margin-top: 20px;
+  }
+  
+  .signup-form div{
+    margin-bottom: 20px;
+  }
+  
+  .login-form div{
+    margin-bottom: 20px;
+  }  
+  
+  .single-post-container{
+    margin-top: 20px;
+  }
+  
+ 
+  .new-post-button{
+    margin: 20px 0;
+    color: white;
+  }
+
+  .container {
+    display: inline-block;
+    
+  }
+
+  .form-label {
+    display: inline-block;
+  }
