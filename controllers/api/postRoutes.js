@@ -8,7 +8,7 @@ router.post("/", withAuth, async (req, res) => {
     const newPost = await Post.create({
       title: req.body.title,
       content: req.body.content,
-      userId: req.session.user_id,
+      user_id: req.session.user_id,
     });
 
     console.log("New post: ", newPost);
@@ -49,7 +49,7 @@ router.delete("/:id", withAuth, async (req, res) => {
     if (deletePost) {
       res.status(200).json(deletePost);
     } else {
-      res.status(404).json({ message: "No post found with this id!" });
+      res.status(404).json({ message: "No post found for this id!" });
     }
   } catch (err) {
     res.status(500).json(err);

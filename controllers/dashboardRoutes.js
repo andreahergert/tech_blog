@@ -1,9 +1,9 @@
 const router = require("express").Router();
-const { Post, User, Comment } = require("../models");
+const { Post, User, Comment } = require("../models/");
 const withAuth = require("../utils/auth");
 
 // Get all of your posts
-router.get("/", async (req, res) => {
+router.get("/", withAuth, async (req, res) => {
   try {
     //Get all posts where the current user is logged in
     const postData = await Post.findAll({
@@ -37,7 +37,7 @@ router.get("/new", (req, res) => {
   res.render("new-post");
 });
 
-router.get("/edit/:id", async (req, res) => {
+router.get("/edit/:id", withAuth, async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id);
 
