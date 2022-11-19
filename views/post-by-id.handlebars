@@ -1,42 +1,43 @@
 <article class="post">
-    <div class="container-fluid row">
-    <div class="card-header dashboard-post">
-       <h4 class="card-title post-title">{{post.title}}</h4>
-        <div class="card-body post-body">
-        <p class="card-body post-content">{{post.content}}</p>
-        <p class="card-text post-author">Posted by <span class="post-username">{{post.user.username}}</span> on {{format_date post.createdAt}}</p>
+    <div class="container row">
+        <div class="card-header dashboard-post">
+            <h4 class="card-title post-title">{{post.title}}</h4>
+            <div class="card-body post-body">
+                <p class="card-body post-content">{{post.content}}</p>
+                <p class="card-text post-author">Posted by <span class="post-username">{{post.user.username}}</span> on
+                    {{format_date post.createdAt}}</p>
+            </div>
         </div>
     </div>
-</div>
 </article>
 
-<div class="container-fluid comment-container">
+<div class="comment-container">
     <h3 class="card-header"></h3>
     <form class="card-body comment-form" id="comment-form">
-    <div class="form-row">
-        <label class="form-label">Comment</label>
-        <input id="comment" name="comment-body" class="form-input  form-control" />
-    </div>
+        <div class="form-row">
+            <label class="form-label">Comment</label>
+            <input id="comment" name="comment-body" class="form-input  form-control" />
+        </div>
         <button type="submit" class="btn-primary">Submit</button>
     </form>
 </div>
 
-<div class="container-fluid row">
-<div class="container-fluid comments">
-    <h4 class="comment-list">Comments</h4>
-  {{#each post.comments}}
-    <div class="card post comment-box">
-    <div class="card-body post-body">
-        <div class="card-text comment-text">
-            {{comment_content}}
+<div class="container row">
+    <div class="comments">
+        <h4 class="comment-list">Comments</h4>
+        {{#each post.comments}}
+        <div class="card post comment-box">
+            <div class="card-body post-body">
+                <div class="card-text comment-text">
+                    {{comment_content}}
+                </div>
+                <div class="comment-author">
+                    -{{user.username}}, {{format_date createdAt}}
+                </div>
+            </div>
         </div>
-        <div class="comment-author">
-            -{{user.username}}, {{format_date createdAt}}
-        </div>
+        {{/each}}
     </div>
-    </div>
-  {{/each}}
-</div>
 </div>
 
 <script src="/js/comment.js"></script>

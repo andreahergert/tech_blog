@@ -1,28 +1,24 @@
 <h2>Your Posts</h2>
 
-<button type="submit" class="btn new-post-button btn"><a class="link" href="/dashboard/new">Add Post</a></button>
+<button type="submit" class="btn btn-primary"><a href="/dashboard/new">Add Post</a></button>
 <section>
-{{#if posts.length}}
+    {{#if posts.length}}
 
-  
     {{#each posts as |post|}}
     <article class="post">
-    <div class="container-fluid row dashboard-container">
-    <div class="card-header dashboard-post">
-       <h4 class="card-title post-title"><a class="link" href="/dashboard/edit/{{id}}">{{title}}</a></h4>
-        <div class="card-body post-body">
-        <p class="card-body post-content">{{content}}</p>
-        <p class="card-text post-author">Posted by <span class="post-username">{{user.username}}</span> on {{format_date post.createdAt}}</p>
+        <div class="container-fluid dashboard-container">
+            <div class="card-header dashboard-post">
+                <h4 class="card-title post-title"><a class="link" href="/dashboard/edit/{{id}}">{{title}}</a></h4>
+                <div class="card-body post-body">
+                    <p class="card-body post-content">{{content}}</p>
+                    <p class="card-text post-author">Posted by <span class="post-username">{{user.username}}</span> on
+                        {{format_date post.createdAt}}</p>
+                </div>
+            </div>
         </div>
-    </div>
-    </div>
     </article>
     {{/each}}
 
 
-{{/if}}
+    {{/if}}
 </section>
-
-
-
-

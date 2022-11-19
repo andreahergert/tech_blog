@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tech Blog</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
   <div class="container-fluid">
-<header class="row">
-  <h1><a class="title" href="/">Tech Blog</a></h1>
+    <header class="row">
+      <h1><a class="title" href="/">Tech Blog</a></h1>
       <nav>
         <ul class="navbar">
-              <li><a class="link" href="/">Home</a></li>
-               <li><a class="link" href="/dashboard">Dashboard</a></li>  
-               {{#if loggedIn}}            
-               <li><a class="link" href="/" id="logout">Logout</a></li> 
-               {{else}}             
-               <li><a class="link" href="/login">Login</a></li>      
-               {{/if}}        
+          <li><a class="link" href="/">Home</a></li>
+          <li><a class="link" href="/dashboard">Dashboard</a></li>
+          {{#if logged_in}}
+          <li><a class="link" href="/" id="logout">Logout</a></li>
+          {{else}}
+          <li><a class="link" href="/login">Login</a></li>
+          {{/if}}
         </ul>
-      </nav>    
-</header>
+      </nav>
+    </header>
 
-<main>
-  {{{ body }}}
-</main>
+    <main>
+      {{{ body }}}
+    </main>
 
-   
-    {{#if loggedIn}}
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" ></script>
-    <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    {{#if logged_in}}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/js/logout.js"></script>
     {{/if}}
-</div>
+  </div>
 </body>
 
 </html>
