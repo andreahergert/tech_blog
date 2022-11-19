@@ -25,7 +25,7 @@ router.get("/", async (req, res) => {
 // get single post
 router.get("/post/:id", async (req, res) => {
   try {
-    const postData = await Post.findOne(req.params.id, {
+    const postData = await Post.findByPk(req.params.id, {
       include: [
         {
           model: Comment,
@@ -56,7 +56,7 @@ router.get("/post/:id", async (req, res) => {
 //Route to login or signup page
 router.get("/login", (req, res) => {
   if (req.session.logged_in) {
-    res.redirect('/');
+    res.redirect('/dashboard');
     return;
   }
 

@@ -1,5 +1,5 @@
 <article class="post">
-    <div class="container row">
+    <div class="container-fluid row">
     <div class="card-header dashboard-post">
        <h4 class="card-title post-title">{{post.title}}</h4>
         <div class="card-body post-body">
@@ -10,7 +10,7 @@
 </div>
 </article>
 
-<div class="comment-container">
+<div class="container-fluid comment-container">
     <h3 class="card-header"></h3>
     <form class="card-body comment-form" id="comment-form">
     <div class="form-row">
@@ -21,8 +21,8 @@
     </form>
 </div>
 
-<div class="container row">
-<div class="comments">
+<div class="container-fluid row">
+<div class="container-fluid comments">
     <h4 class="comment-list">Comments</h4>
   {{#each post.comments}}
     <div class="card post comment-box">
