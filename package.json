@@ -7,6 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+    "engines": {
+      "node": "18.12.1",
+      "npm": "8.19.2"
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/andreahergert/tech-blog.git"
