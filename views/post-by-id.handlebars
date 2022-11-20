@@ -1,5 +1,5 @@
 <article class="post">
-    <div class="container row">
+    <div class="container">
         <div class="card-header dashboard-post">
             <h4 class="card-title post-title">{{post.title}}</h4>
             <div class="card-body post-body">
@@ -12,17 +12,16 @@
 </article>
 
 <div class="comment-container">
-    <h3 class="card-header"></h3>
     <form class="card-body comment-form" id="comment-form">
         <div class="form-row">
             <label class="form-label">Comment</label>
             <input id="comment" name="comment-body" class="form-input  form-control" />
         </div>
-        <button type="submit" class="btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">SUBMIT</button>
     </form>
 </div>
 
-<div class="container row">
+<div class="container">
     <div class="comments">
         <h4 class="comment-list">Comments</h4>
         {{#each post.comments}}

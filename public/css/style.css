@@ -1,23 +1,53 @@
+:root {
+  --mono-green: #4c8a9a;
+  --tea-green: #96C0B7;
+  --dark-teal: #335C67;
+  --dark-purple: #28112B;
+  --dark-rose: #4C2F3A;
+}
+
 body {
-  background-color: #ccc;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: var(--tea-green);
   font-size: 16px;
 }
 
 header {
-  background-color: rgb(30, 99, 42);
+  background-color: var(--dark-teal);
   border-bottom: 1px solid black ;
 }
 
-h1 {
+h1 a {
+  color: var(--tea-green);
+  font-size: 50px;
+}
+
+h1, h2 {
   text-align: center;
   margin-bottom: 30px;
   font-weight: bold;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-  font-size: 1.5em;    
+nav a {
+  color: var(--tea-green);
+  font-size: 30px;
+  text-decoration: underline;
+  padding: 6px;
+}
+
+.card-header {
+  background-color: #ccc;
+  display: block;
+}
+
+button a {
+  color: white;
+}
+
+.post {
+  margin: 5px;
+}
+
+.col {
+  margin: 5px;
 }
