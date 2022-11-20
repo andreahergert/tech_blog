@@ -28,5 +28,6 @@
     "mysql2": "^2.3.3",
     "sequelize": "^6.23.2",
     "serve": "^14.1.2"
-  }
+  },
+  "devDependencies": {}
 }
