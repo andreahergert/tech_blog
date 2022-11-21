@@ -51,3 +51,7 @@ button a {
 .col {
   margin: 5px;
 }
+
+.centerthisbutton {
+  text-align: center;
+}
