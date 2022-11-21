@@ -20,7 +20,6 @@ This is a tech blog created in the UW Coding Bootcamp. On the front-end, the app
 - Ensure express is installed
 - Ensure express-handlebars is installed
 - Ensure express-session is installed
-- Ensure handlebars is installed
 - Ensure mysql2 is installed
 - Ensure sequelize is installed
 - Ensure connect-session-sequelize is installed
