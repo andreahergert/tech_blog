@@ -18,6 +18,9 @@ const sess = {
   secret: 'supersecret',
   cookie: {
     maxAge: 24 * 60 * 60 * 1000, // expires after 1 day
+    httpOnly: true,
+    secure: false,
+    sameSite: 'strict',
   },
   resave: false,
   saveUninitialized: true,
