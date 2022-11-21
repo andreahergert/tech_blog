@@ -1,6 +1,7 @@
-require('dotenv').config();
 const Sequelize = require('sequelize');
-sequelize = new Sequelize(process.env.JAWSDB_URL, {
+require('dotenv').config();
+
+sequelize = new Sequelize(process.env.DATABASE_URL, {
     dialectOptions: {
       ssl: {
         require: true,
