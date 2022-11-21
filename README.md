@@ -29,7 +29,7 @@ This is a tech blog created in the UW Coding Bootcamp. On the front-end, the app
 
 ## Usage:
 
-Webpage:
+Webpage: https://ancient-citadel-20743.herokuapp.com/ 
 
 Back-end after cloning or downloading repo files:
 - Open terminal and navigate to tech_blog folder
