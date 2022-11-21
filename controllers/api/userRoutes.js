@@ -14,9 +14,10 @@ router.post("/", async (req, res) => {
       req.session.username = newUser.username;
       req.session.logged_in = true;
 
-      res.json(newUser);
+      res.status(200).json(newUser);
     });
   } catch (err) {
+    console.log(err);
     res.status(500).json(err);
   }
 });

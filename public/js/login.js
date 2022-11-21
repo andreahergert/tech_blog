@@ -7,7 +7,7 @@ const loginFormHandler = async (event) => {
 
   if (username && password) {
     const response = await fetch("/api/users/login", {
-      method: "post",
+      method: "POST",
       body: JSON.stringify({ username, password }),
       headers: { "Content-Type": "application/json" },
     });
@@ -20,10 +20,6 @@ const loginFormHandler = async (event) => {
     }
   }
 };
-
-document
-  .querySelector(".login-form")
-  .addEventListener("submit", loginFormHandler);
 
 // Signup form
 const signupFormHandler = async (event) => {
@@ -40,7 +36,6 @@ const signupFormHandler = async (event) => {
       headers: { "Content-Type": "application/json" },
     });
     if (response.ok) {
-      console.log("success");
       // If successful, redirect the browser to the dashboard
       document.location.replace("/dashboard/");
     } else {
@@ -48,6 +43,10 @@ const signupFormHandler = async (event) => {
     }
   }
 };
+
+document
+  .querySelector(".login-form")
+  .addEventListener("submit", loginFormHandler);
 
 document
   .querySelector(".signup-form")
