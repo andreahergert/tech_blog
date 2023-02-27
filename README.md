@@ -4,6 +4,7 @@
 [![license](https://img.shields.io/badge/license-MIT-blue)](https://shields.io)
 
 ## Table of Contents 
+- [User Story](#user-story)
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -11,6 +12,11 @@
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
+
+## User Story:
+AS A developer who writes about tech
+I WANT a CMS-style blog site
+SO THAT I can publish articles, blog posts, and my thoughts and opinions
 
 ## Description:
 This is a tech blog created in the UW Coding Bootcamp. On the front-end, the app can be accessed at Heroku.  On the back-end, this is a node command line application that utilizes sequilize, dotenv, mysql2, express, handlebars, and bcrypt.
