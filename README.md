@@ -21,7 +21,7 @@ I WANT a CMS-style blog site
 SO THAT I can publish articles, blog posts, and my thoughts and opinions
 
 ## Description:
-This is a tech blog created in the UW Coding Bootcamp. On the front-end, the app can be accessed at Heroku.  On the back-end, this is a node command line application that utilizes sequilize, dotenv, mysql2, express, handlebars, and bcrypt.
+This is a node command line application that utilizes sequilize, dotenv, mysql2, express, handlebars, and bcrypt.
 
 ## Installation:
 - Download it through Github
@@ -36,8 +36,6 @@ This is a tech blog created in the UW Coding Bootcamp. On the front-end, the app
 - To connect to the database, once files are downloaded to you computer, you will need to use a .env file to input your password and username for your mysql.
 
 ## Usage:
-
-Webpage: https://ancient-citadel-20743.herokuapp.com/ 
 
 Back-end after cloning or downloading repo files:
 - Open terminal and navigate to tech_blog folder
@@ -62,41 +60,6 @@ Back-end after cloning or downloading repo files:
 - You will see the Now Listening indication and can access on your localhost
 
 
-Screenshots:
-
-Homepage
-![Screenshot](assets/img/screenshot1.png)
-
-
-Login and Sign Up Page
-![Screenshot](assets/img/screenshot2.png)
-
-
-Dashboard Once Logged In
-![Screenshot](assets/img/screenshot3.png)
-
-
-Adding a Post
-![Screenshot](assets/img/screenshot4.png)
-
-
-New Post Shows up on your Dashboard
-![Screenshot](assets/img/screenshot5.png)
-
-
-Adding a Comment to a Post from Another User
-![Screenshot](assets/img/screenshot6.png)
-
-
-User's Comment Added
-![Screenshot](assets/img/screenshot7.png)
-
-
-New Post Shows up on Homepage
-![Screenshot](assets/img/screenshot8.png)
-
-
-
 ## License:
 MIT
 
@@ -107,5 +70,4 @@ Contributions are welcome through forking my repository.
 None
 
 ## Questions:
-- Github: [andreahergert](https://github.com/andreahergert)
-- Email: ahergert24@hotmail.com 
+- Email: brandmckie@gmail.com
